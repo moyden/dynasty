@@ -1,0 +1,99 @@
+name: Colorado Pony Hospital
+
+salary-cap:
+  cap: 199
+  hit: 188
+  space: 11
+
+trophies:
+  - name: Tim Tebow Cup
+
+roster:
+  qb:
+    - num: 1
+      name: Derek Carr
+      posi: QB
+      cost: 6
+      year: 1
+    - num: 2
+      name: Carson Palmer
+      posi: QB
+      cost: 4
+      year: 1
+  rb:
+    - num: 3
+      name: Melvin Gordon
+      posi: RB
+      cost: 16
+      year: 3
+    - num: 4
+      name: Thomas Rawls
+      posi: RB
+      cost: 9
+      year: 3
+    - num: 5
+      name: Giovani Bernard
+      posi: RB
+      cost: 2
+      year: 3
+  wr:
+    - num: 6
+      name: Davante Adams
+      posi: WR
+      cost: 12
+      year: 4
+    - num: 7
+      name: Demaryius Thomas
+      posi: WR
+      cost: 10
+      year: 2
+    - num: 8
+      name: Jordy Nelson
+      posi: WR
+      cost: 9
+      year: 3
+    - num: 9
+      name: Randall Cobb
+      posi: WR
+      cost: 9
+      year: 2
+    - num: 10
+      name: Eric Decker
+      posi: WR
+      cost: 7
+      year: 2
+    - num: 11
+      name: Allen Robinson
+      posi: WR
+      cost: 3
+      year: 2
+    - num: 12
+      name: John Brown
+      posi: WR
+      cost: 3
+      year: 2
+    - num: 13
+      name: Michael Thomas
+      posi: WR
+      cost: 1
+      year: 3
+  te:
+    - num: 14
+      name: Eric Ebron
+      posi: TE
+      cost: 1
+      year: 2
+
+contracts:
+  - name: Matt Jones
+    posi: RB
+    cost: 4
+    year: 2
+  - name: Kevin White
+    posi: WR
+    cost: 3
+    year: 3
+  - name: David Cobb
+    posi: RB
+    cost: 2
+    year: 3

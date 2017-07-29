@@ -1,0 +1,103 @@
+// scdl logo
+
+.scdl-logo {
+  width: 3rem;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+.scdl-logo__text {
+  font-family: 'Aleo';
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+// teampage
+
+// banner
+
+.banner {
+  display: block;
+  margin: 1.5rem 0;
+  text-align: center;
+  transform: scale(1) skewY(-3deg);
+  overflow: visible;
+}
+
+.banner__main {
+  display: inline-block;
+  position: relative;
+  height: 28px;
+  background-color: #444;
+  color: white;
+  line-height: 27px;
+  padding: 0 0.5em;
+  vertical-align: top;
+  z-index: 1;
+}
+
+.ribbon-left, .ribbon-right {
+  height: 28px;
+  display: inline;
+  position: relative;
+}
+
+.ribbon-left {
+  left: 14px;
+  top: -6px;
+}
+
+.ribbon-right {
+  left: -14px;
+  top: 6px;
+}
+
+// cap-info
+
+.cap-info__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 80%;
+}
+
+.cap-info__item {
+  flex: 0 0 30%;
+  // background-color: steelblue;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cap-info__label {
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 0.4em;
+}
+
+// roster
+
+.roster--num {
+  text-align: center;
+  width: 3em;
+  // background-color: steelblue;
+}
+
+.roster--name {
+  text-align: left;
+  padding-left: 1em;
+}
+
+.roster--cost {
+  text-align: right;
+  width: 2em;
+  padding-right: 1em;
+  // background-color: crimson;
+}
+
+.roster--year {
+  width: 2em;
+  text-align: right;
+  padding-right: 1em;
+  // background-color: forestgreen;
+}

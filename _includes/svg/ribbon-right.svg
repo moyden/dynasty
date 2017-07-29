@@ -1,0 +1,8 @@
+<svg class="ribbon-right" viewbox="0 0 100 100">
+  <g>
+    <polygon class="ribbon--light"
+      points="100,0 0,0 0,100 100,100 68,50" />
+    <polygon class="ribbon--dark"
+      points="0,100 34,80 31,70 0,70" />
+  </g>
+</svg>

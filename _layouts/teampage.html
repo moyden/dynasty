@@ -1,0 +1,158 @@
+---
+layout: default
+---
+{% assign team = site.data.[page.datafile] %}
+
+<div class="banner">
+  {% include svg/ribbon-left.svg %}
+  <h1 class="banner__main">{{ team.name }}</h1>
+  {% include svg/ribbon-right.svg %}
+</div>
+
+<section class="cap-info">
+  <h2>Salary Cap</h2>
+
+  <ul class="cap-info__list">
+    <li class="cap-info__item">
+      <span class="cap-info__label">
+        Team Cap
+      </span>
+      ${{ team.salary-cap.cap }}
+    </li>
+    <li class="cap-info__item">
+      <span class="cap-info__label">
+        Cap Hit
+      </span>
+      ${{ team.salary-cap.hit }}
+    </li>
+    <li class="cap-info__item">
+      <span class="cap-info__label">
+        Cap Space
+      </span>
+      ${{ team.salary-cap.space }}
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Roster</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="roster--num">#</th>
+        <th class="roster--name">Quarterbacks</th>
+        <th class="roster--cost">$</th>
+        <th class="roster--year">yr</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for player in team.roster.qb %}
+      <tr>
+        <td class="roster--num">{{ player.num }}</td>
+        <td class="roster--name">{{ player.name }}</td>
+        <td class="roster--cost">{{ player.cost }}</td>
+        <td class="roster--year">{{ player.year }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="roster--num">#</th>
+        <th class="roster--name">Running Backs</th>
+        <th class="roster--cost">$</th>
+        <th class="roster--year">yr</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for player in team.roster.rb %}
+      <tr>
+        <td class="roster--num">{{ player.num }}</td>
+        <td class="roster--name">{{ player.name }}</td>
+        <td class="roster--cost">{{ player.cost }}</td>
+        <td class="roster--year">{{ player.year }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="roster--num">#</th>
+        <th class="roster--name">Wide Receivers</th>
+        <th class="roster--cost">$</th>
+        <th class="roster--year">yr</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for player in team.roster.wr %}
+      <tr>
+        <td class="roster--num">{{ player.num }}</td>
+        <td class="roster--name">{{ player.name }}</td>
+        <td class="roster--cost">{{ player.cost }}</td>
+        <td class="roster--year">{{ player.year }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="roster--num">#</th>
+        <th class="roster--name">Tight Ends</th>
+        <th class="roster--cost">$</th>
+        <th class="roster--year">yr</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for player in team.roster.te %}
+      <tr>
+        <td class="roster--num">{{ player.num }}</td>
+        <td class="roster--name">{{ player.name }}</td>
+        <td class="roster--cost">{{ player.cost }}</td>
+        <td class="roster--year">{{ player.year }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Outstanding Contracts</h2>
+  <table>
+    <thead>
+      <tr>
+        <th class="roster--num">Pos</th>
+        <th class="roster--name">Player</th>
+        <th class="roster--cost">$</th>
+        <th class="roster--year">yr</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for player in team.contracts %}
+      <tr>
+        <td class="roster--num">{{ player.posi }}</td>
+        <td class="roster--name">{{ player.name }}</td>
+        <td class="roster--cost">{{ player.cost }}</td>
+        <td class="roster--year">{{ player.year }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Trophies</h2>
+  <ul>
+    {% for trophy in team.trophies %}
+    <li>{{ trophy.name }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+{{ content }}

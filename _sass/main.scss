@@ -1,50 +1,42 @@
 @charset "utf-8";
 
+// Team Colours
+$joe-color-1: rgb(230, 126, 34);
+$joe-color-2: rgb(52, 152, 219);
+$joe-color-3: rgb(31, 118, 165);
 
+$jam-color-1: rgb(41, 128, 185);
+$jam-color-2: rgb(192, 57, 43);
+$jam-color-3: rgb(189, 195, 199);
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$ric-color-1: rgb(111, 77, 75);
+$ric-color-2: rgb(230, 126, 34);
+$ric-color-3: rgb(191, 74, 0);
 
-$spacing-unit:     30px;
+$wil-color-1: rgb(212, 57, 43);
+$wil-color-2: rgb(241, 196, 15);
+$wil-color-3: rgb(243, 156, 18);
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$luk-color-1: rgb(50, 50, 50);
+$luk-color-2: rgb(20, 20, 20);
+$luk-color-3: rgb(189, 195, 199);
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$dom-color-1: rgb(23, 126, 64);
+$dom-color-2: rgb(241, 196, 15);
+$dom-color-3: rgb(243, 156, 18);
 
-// Width of the content area
-$content-width:    800px;
+$ale-color-1: rgb(20, 142, 150);
+$ale-color-2: rgb(243, 156, 18);
+$ale-color-3: rgb(220, 116, 34);
 
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
+$ada-color-1: rgb(52, 73, 94);
+$ada-color-2: rgb(44, 62, 80);
+$ada-color-3: rgb(46, 204, 113);
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+  "reset",
+  "base",
+  "modules",
+  "theme"
 ;
